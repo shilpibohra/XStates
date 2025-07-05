@@ -100,7 +100,7 @@ const App = () => {
             </option>
             {countries.length > 0 &&
               countries.map((country, index) => (
-                <option key={index} value={country.name}>
+                <option key={country.name} value={country.name}>
                   {country.name}
                 </option>
               ))}
@@ -117,7 +117,7 @@ const App = () => {
             </option>
             {states.length > 0 &&
               states.map((state, index) => (
-                <option key={index} value={state}>
+                <option key={state} value={state}>
                   {state}
                 </option>
               ))}
@@ -134,7 +134,7 @@ const App = () => {
             </option>
             {cities.length > 0 &&
               cities.map((city, index) => (
-                <option key={index} value={city}>
+                <option key={city} value={city}>
                   {city}
                 </option>
               ))}
