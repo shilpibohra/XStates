@@ -23,7 +23,7 @@ const App = () => {
           throw new Error("Failed to fetch countries");
         }
         const data = await response.json();
-        setCountries(data.slice(0,251));
+        setCountries(data);
       } catch (error) {
         console.error("Error fetching countries:", error);
         setCountries([]); // Set countries to empty array on error
