@@ -17,7 +17,7 @@ const App = () => {
     const fetchCountries = async () => {
       try {
         const response = await fetch(
-          "https://xcountries-backend.azurewebsites.net/all"
+          "https://crio-location-selector.onrender.com/countries"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch countries");
